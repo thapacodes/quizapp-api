@@ -3827,6 +3827,261 @@ else {
     }
 }
 ```
+### Get All Quiz Data For Specific Quiz Chapter
+```js
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "chapter": "et"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:8000/api/v1/quiz/category/chapter", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```dart
+var headers = {
+  'Content-Type': 'application/json'
+};
+var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/quiz/category/chapter'));
+request.body = json.encode({
+  "chapter": "et"
+});
+request.headers.addAll(headers);
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}
+```
+
+```json
+{
+    "response": {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 1,
+                "question": "Explicabo velit ut quam.",
+                "options": "{\"A\":\"reiciendis\",\"B\":\"quia\",\"C\":\"rem\",\"D\":\"neque\"}",
+                "answer": "C",
+                "description": "Architecto magnam sed id excepturi. Labore voluptatum est quibusdam vel. Cum voluptatem magni dolores culpa quod numquam ut. Molestiae doloribus laborum neque.",
+                "chapter": "et",
+                "category": "ut",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 19,
+                "question": "Quia voluptas temporibus ut.",
+                "options": "{\"A\":\"totam\",\"B\":\"ipsum\",\"C\":\"tempora\",\"D\":\"aut\"}",
+                "answer": "D",
+                "description": "Autem magnam ut sed. Distinctio quaerat odit et architecto velit aliquid laborum. Ut eum tenetur libero animi numquam.",
+                "chapter": "et",
+                "category": "rerum",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 24,
+                "question": "Inventore sed molestias voluptas et.",
+                "options": "{\"A\":\"qui\",\"B\":\"quasi\",\"C\":\"dolore\",\"D\":\"ipsam\"}",
+                "answer": "A",
+                "description": "Nulla qui impedit autem in. Repellat accusantium nihil nam qui consectetur. Eos hic iste architecto omnis est vitae.",
+                "chapter": "et",
+                "category": "qui",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 32,
+                "question": "Placeat eius praesentium eveniet provident beatae odio iste.",
+                "options": "{\"A\":\"rerum\",\"B\":\"perferendis\",\"C\":\"eligendi\",\"D\":\"deserunt\"}",
+                "answer": "C",
+                "description": "Ad laboriosam explicabo et qui perspiciatis inventore dolorum. Error ut et omnis minus rerum. Deleniti molestiae sed ipsam quasi labore voluptatum.",
+                "chapter": "tenetur",
+                "category": "tempore",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 46,
+                "question": "Explicabo sunt minus aliquid accusamus.",
+                "options": "{\"A\":\"corporis\",\"B\":\"maxime\",\"C\":\"quia\",\"D\":\"voluptatem\"}",
+                "answer": "C",
+                "description": "Aut soluta accusamus quo voluptatem non. Fuga voluptatem accusantium corrupti. Totam numquam atque tenetur modi. Nisi ea eius consequatur aut occaecati voluptatibus pariatur quia. Et doloribus non vitae provident velit quo ipsum aliquam.",
+                "chapter": "et",
+                "category": "nobis",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 67,
+                "question": "Earum natus unde nisi magnam.",
+                "options": "{\"A\":\"voluptas\",\"B\":\"beatae\",\"C\":\"numquam\",\"D\":\"aliquam\"}",
+                "answer": "D",
+                "description": "Eveniet sint pariatur deserunt distinctio sapiente quia debitis. Cumque similique dolores accusantium voluptatum. Est aut sunt autem illo.",
+                "chapter": "et",
+                "category": "dolorum",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 70,
+                "question": "Et dolor omnis totam adipisci et illum quia.",
+                "options": "{\"A\":\"illo\",\"B\":\"quia\",\"C\":\"veritatis\",\"D\":\"et\"}",
+                "answer": "A",
+                "description": "Et distinctio sint illum quae repudiandae. Quod aut aspernatur nobis odit aut tempore. Mollitia possimus voluptates eum odio nesciunt minima culpa nisi. Natus eveniet soluta quam debitis.",
+                "chapter": "et",
+                "category": "voluptas",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 87,
+                "question": "Aut nihil vel distinctio voluptatibus illum eligendi omnis.",
+                "options": "{\"A\":\"quo\",\"B\":\"voluptatem\",\"C\":\"earum\",\"D\":\"rem\"}",
+                "answer": "B",
+                "description": "Tempore cumque molestias itaque rerum sed. Et cumque est laborum incidunt aut. Praesentium nihil vero temporibus et blanditiis libero et.",
+                "chapter": "et",
+                "category": "eos",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 100,
+                "question": "A doloremque est nostrum ab id ad.",
+                "options": "{\"A\":\"aut\",\"B\":\"deserunt\",\"C\":\"nihil\",\"D\":\"ut\"}",
+                "answer": "A",
+                "description": "Cum ea saepe blanditiis voluptatem. Dolores quis qui at. Eligendi iusto fuga consequatur quod. Aut eum aliquam sunt autem perferendis ipsam deserunt eos.",
+                "chapter": "consectetur",
+                "category": "enim",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 111,
+                "question": "Totam vel quia voluptatum ipsum.",
+                "options": "{\"A\":\"ratione\",\"B\":\"fugit\",\"C\":\"voluptates\",\"D\":\"ducimus\"}",
+                "answer": "C",
+                "description": "Et quia hic accusamus repellendus. Sit quod consequatur numquam voluptatem ipsam in eius. Qui voluptates nisi reprehenderit et.",
+                "chapter": "consectetur",
+                "category": "impedit",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 115,
+                "question": "Impedit temporibus voluptatem laboriosam doloribus officiis a temporibus.",
+                "options": "{\"A\":\"odio\",\"B\":\"perferendis\",\"C\":\"ab\",\"D\":\"in\"}",
+                "answer": "D",
+                "description": "Provident nemo voluptate doloremque sit. Maiores nihil qui debitis beatae quo quia ipsam. Voluptatum id officiis iusto in repellat. Aliquid voluptatem voluptatem odio quam autem.",
+                "chapter": "amet",
+                "category": "voluptatem",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 116,
+                "question": "Nihil inventore assumenda atque similique.",
+                "options": "{\"A\":\"officiis\",\"B\":\"nemo\",\"C\":\"fugiat\",\"D\":\"sit\"}",
+                "answer": "C",
+                "description": "Id aspernatur et soluta inventore qui accusantium. Aut aliquam occaecati occaecati amet voluptatibus vel accusantium. Exercitationem tempore eveniet reprehenderit quae. Quasi et non amet consequatur cum sunt.",
+                "chapter": "et",
+                "category": "sit",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 158,
+                "question": "Tempora facilis sit alias fuga.",
+                "options": "{\"A\":\"cumque\",\"B\":\"et\",\"C\":\"libero\",\"D\":\"illum\"}",
+                "answer": "C",
+                "description": "Placeat quis iusto voluptatem eos voluptatem. Officiis iusto velit rerum ea occaecati voluptates. Alias voluptas voluptatem et.",
+                "chapter": "et",
+                "category": "consequatur",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 165,
+                "question": "Corrupti facere aut id quis saepe.",
+                "options": "{\"A\":\"id\",\"B\":\"et\",\"C\":\"et\",\"D\":\"eaque\"}",
+                "answer": "C",
+                "description": "Quo eos illo vero dolorum aut aut. Ullam autem vitae quibusdam pariatur. Ut voluptatem voluptates quasi nemo magnam. Eaque cum velit eum et aliquid et quia voluptatum.",
+                "chapter": "amet",
+                "category": "sunt",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 182,
+                "question": "Rerum modi pariatur expedita dicta.",
+                "options": "{\"A\":\"aut\",\"B\":\"consequatur\",\"C\":\"quo\",\"D\":\"omnis\"}",
+                "answer": "D",
+                "description": "Dolores odio qui cumque nesciunt. Veritatis et sed sit et id quos. Eos et quia atque quo dolor maiores quod. Corporis voluptatem inventore vitae voluptatem.",
+                "chapter": "eveniet",
+                "category": "odio",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            },
+            {
+                "id": 185,
+                "question": "Et quasi iste nihil fugit esse earum aut.",
+                "options": "{\"A\":\"voluptas\",\"B\":\"ab\",\"C\":\"nihil\",\"D\":\"et\"}",
+                "answer": "D",
+                "description": "Architecto vitae cupiditate dicta. Voluptate ut sint rem suscipit omnis. Corporis similique voluptatem repudiandae sequi nesciunt est qui.",
+                "chapter": "consectetur",
+                "category": "est",
+                "created_at": "2021-07-27T03:17:43.000000Z",
+                "updated_at": "2021-07-27T03:17:43.000000Z"
+            }
+        ],
+        "first_page_url": "http://127.0.0.1:8000/api/v1/quiz/category/chapter?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http://127.0.0.1:8000/api/v1/quiz/category/chapter?page=1",
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://127.0.0.1:8000/api/v1/quiz/category/chapter?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "next_page_url": null,
+        "path": "http://127.0.0.1:8000/api/v1/quiz/category/chapter",
+        "per_page": 100,
+        "prev_page_url": null,
+        "to": 16,
+        "total": 16
+    }
+}
+```
+
 
 ### Get All Quiz Data For Specific Quiz Category
 ```js
@@ -4175,5 +4430,463 @@ else {
 ```json
 {
     "message": "Quiz questions deleted successfully"
+}
+```
+
+
+## Notes API Routes
+
+### Get All Notes
+```js
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:8000/api/v1/note", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```dart
+var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/note'));
+
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}
+```
+
+``json
+{
+    "data": [
+        {
+            "id": 1,
+            "chapter": "qui",
+            "category": "consequuntur",
+            "notes": "Fugit id ratione voluptate deserunt aut reiciendis. Architecto beatae ut dolores ut nisi dignissimos. Facilis ea mollitia ut nihil et repudiandae reprehenderit. Velit maxime modi aut facere deleniti accusamus. Ut dolor ut quia in aliquid qui. Quibusdam iusto eius perferendis culpa quis qui dolorem consequatur. Dignissimos dolorem itaque omnis cupiditate consequuntur consequuntur eos. Voluptatem reiciendis soluta quisquam qui. Est quia eligendi voluptatem. Pariatur voluptatibus nostrum cumque et molestiae ea. Consequatur enim ratione aspernatur et enim. Unde nulla aut ratione aut suscipit. Qui aut fuga voluptatem est quia quidem enim. Ut ducimus nostrum quo eaque.",
+            "created_at": "2021-07-27T03:17:55.000000Z",
+            "updated_at": "2021-07-27T03:17:55.000000Z"
+        }
+    ],
+    "links": {
+        "first": "http://127.0.0.1:8000/api/v1/note?page=1",
+        "last": "http://127.0.0.1:8000/api/v1/note?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://127.0.0.1:8000/api/v1/note?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "path": "http://127.0.0.1:8000/api/v1/note",
+        "per_page": 50,
+        "to": 1,
+        "total": 1
+    }
+}
+```
+
+### Get A Single Note
+```js
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:8000/api/v1/note/1", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```dart
+var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/note/1'));
+
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}
+```
+
+```json
+{
+    "data": {
+        "id": 1,
+        "chapter": "qui",
+        "category": "consequuntur",
+        "notes": "Fugit id ratione voluptate deserunt aut reiciendis. Architecto beatae ut dolores ut nisi dignissimos. Facilis ea mollitia ut nihil et repudiandae reprehenderit. Velit maxime modi aut facere deleniti accusamus. Ut dolor ut quia in aliquid qui. Quibusdam iusto eius perferendis culpa quis qui dolorem consequatur. Dignissimos dolorem itaque omnis cupiditate consequuntur consequuntur eos. Voluptatem reiciendis soluta quisquam qui. Est quia eligendi voluptatem. Pariatur voluptatibus nostrum cumque et molestiae ea. Consequatur enim ratione aspernatur et enim. Unde nulla aut ratione aut suscipit. Qui aut fuga voluptatem est quia quidem enim. Ut ducimus nostrum quo eaque.",
+        "created_at": "2021-07-27T03:17:55.000000Z",
+        "updated_at": "2021-07-27T03:17:55.000000Z"
+    }
+}
+```
+
+### Create New Note
+```js
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "token": "uNTaIBJEqPTyVthi0sUelUUISdz74V4px3It7KCnWjSPwZZaVD4CbcGcevLKzdUvi12JeMgV7MXRlbZGgF2laGsB7iXAFLTDbUTolYyIAgWlNPzLgc9UdDNw6RPQJrZmvp0hrK5adhPZ2CoDvhh3KfXrmGyhnCWes4njuHTi4bsXGiYYOoioC28bljSQzEhK4gO9lgFOPZHLXwoyZxiaW72WyLL9VFrV2FFhZHdIoyYApgC8ri29nu0DsqdYfnZ",
+  "chapter": "force",
+  "category": "physic",
+  "notes": "lorem ipsum and more dummy text"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:8000/api/v1/note", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```dart
+var headers = {
+  'Content-Type': 'application/json'
+};
+var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/note'));
+request.body = json.encode({
+  "token": "uNTaIBJEqPTyVthi0sUelUUISdz74V4px3It7KCnWjSPwZZaVD4CbcGcevLKzdUvi12JeMgV7MXRlbZGgF2laGsB7iXAFLTDbUTolYyIAgWlNPzLgc9UdDNw6RPQJrZmvp0hrK5adhPZ2CoDvhh3KfXrmGyhnCWes4njuHTi4bsXGiYYOoioC28bljSQzEhK4gO9lgFOPZHLXwoyZxiaW72WyLL9VFrV2FFhZHdIoyYApgC8ri29nu0DsqdYfnZ",
+  "chapter": "force",
+  "category": "physic",
+  "notes": "lorem ipsum and more dummy text"
+});
+request.headers.addAll(headers);
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}
+```
+
+```json
+{
+    "response": {
+        "chapter": "force",
+        "category": "physic",
+        "notes": "lorem ipsum and more dummy text",
+        "message": "New Notes added"
+    }
+}
+```
+
+### Update Existing Note
+```js
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "token": "uNTaIBJEqPTyVthi0sUelUUISdz74V4px3It7KCnWjSPwZZaVD4CbcGcevLKzdUvi12JeMgV7MXRlbZGgF2laGsB7iXAFLTDbUTolYyIAgWlNPzLgc9UdDNw6RPQJrZmvp0hrK5adhPZ2CoDvhh3KfXrmGyhnCWes4njuHTi4bsXGiYYOoioC28bljSQzEhK4gO9lgFOPZHLXwoyZxiaW72WyLL9VFrV2FFhZHdIoyYApgC8ri29nu0DsqdYfnZ",
+  "chapter": "force",
+  "category": "physic",
+  "notes": "lorem ipsum and more dummy text"
+});
+
+var requestOptions = {
+  method: 'PUT',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:8000/api/v1/note/1", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```dart
+var headers = {
+  'Content-Type': 'application/json'
+};
+var request = http.Request('PUT', Uri.parse('http://127.0.0.1:8000/api/v1/note/1'));
+request.body = json.encode({
+  "token": "uNTaIBJEqPTyVthi0sUelUUISdz74V4px3It7KCnWjSPwZZaVD4CbcGcevLKzdUvi12JeMgV7MXRlbZGgF2laGsB7iXAFLTDbUTolYyIAgWlNPzLgc9UdDNw6RPQJrZmvp0hrK5adhPZ2CoDvhh3KfXrmGyhnCWes4njuHTi4bsXGiYYOoioC28bljSQzEhK4gO9lgFOPZHLXwoyZxiaW72WyLL9VFrV2FFhZHdIoyYApgC8ri29nu0DsqdYfnZ",
+  "chapter": "force",
+  "category": "physic",
+  "notes": "lorem ipsum and more dummy text"
+});
+request.headers.addAll(headers);
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}
+```
+
+```json
+{
+    "response": {
+        "id": 1,
+        "chapter": "force",
+        "category": "physic",
+        "notes": "lorem ipsum and more dummy text"
+    },
+    "message": "Note updated successfully"
+}
+```
+
+### Delete Existing Note
+```js
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "token": "uNTaIBJEqPTyVthi0sUelUUISdz74V4px3It7KCnWjSPwZZaVD4CbcGcevLKzdUvi12JeMgV7MXRlbZGgF2laGsB7iXAFLTDbUTolYyIAgWlNPzLgc9UdDNw6RPQJrZmvp0hrK5adhPZ2CoDvhh3KfXrmGyhnCWes4njuHTi4bsXGiYYOoioC28bljSQzEhK4gO9lgFOPZHLXwoyZxiaW72WyLL9VFrV2FFhZHdIoyYApgC8ri29nu0DsqdYfnZ"
+});
+
+var requestOptions = {
+  method: 'DELETE',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:8000/api/v1/note/1", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```dart
+var headers = {
+  'Content-Type': 'application/json'
+};
+var request = http.Request('DELETE', Uri.parse('http://127.0.0.1:8000/api/v1/note/1'));
+request.body = json.encode({
+  "token": "uNTaIBJEqPTyVthi0sUelUUISdz74V4px3It7KCnWjSPwZZaVD4CbcGcevLKzdUvi12JeMgV7MXRlbZGgF2laGsB7iXAFLTDbUTolYyIAgWlNPzLgc9UdDNw6RPQJrZmvp0hrK5adhPZ2CoDvhh3KfXrmGyhnCWes4njuHTi4bsXGiYYOoioC28bljSQzEhK4gO9lgFOPZHLXwoyZxiaW72WyLL9VFrV2FFhZHdIoyYApgC8ri29nu0DsqdYfnZ"
+});
+request.headers.addAll(headers);
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}
+```
+
+```json
+{
+    "message": "Notes deleted successfully"
+}
+```
+
+### Get All Note Data For Specific Note Category
+```js
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "category": "physic"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:8000/api/v1/note/category", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```dart
+var headers = {
+  'Content-Type': 'application/json'
+};
+var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/note/category'));
+request.body = json.encode({
+  "category": "physic"
+});
+request.headers.addAll(headers);
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}
+```
+
+```json
+{
+    "response": {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 2,
+                "chapter": "force",
+                "category": "physic",
+                "notes": "lorem ipsum and more dummy text",
+                "created_at": "2021-07-27T03:24:27.000000Z",
+                "updated_at": "2021-07-27T03:24:27.000000Z"
+            }
+        ],
+        "first_page_url": "http://127.0.0.1:8000/api/v1/note/category?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http://127.0.0.1:8000/api/v1/note/category?page=1",
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://127.0.0.1:8000/api/v1/note/category?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "next_page_url": null,
+        "path": "http://127.0.0.1:8000/api/v1/note/category",
+        "per_page": 100,
+        "prev_page_url": null,
+        "to": 1,
+        "total": 1
+    }
+}
+```
+
+### Get All Note Data For Specific Note Chapter
+```js
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "chapter": "force"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:8000/api/v1/note/category/chapter", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```dart
+var headers = {
+  'Content-Type': 'application/json'
+};
+var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/note/category/chapter'));
+request.body = json.encode({
+  "chapter": "force"
+});
+request.headers.addAll(headers);
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}
+```
+
+```json
+{
+    "response": {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 2,
+                "chapter": "force",
+                "category": "physic",
+                "notes": "lorem ipsum and more dummy text",
+                "created_at": "2021-07-27T03:24:27.000000Z",
+                "updated_at": "2021-07-27T03:24:27.000000Z"
+            }
+        ],
+        "first_page_url": "http://127.0.0.1:8000/api/v1/note/category/chapter?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http://127.0.0.1:8000/api/v1/note/category/chapter?page=1",
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://127.0.0.1:8000/api/v1/note/category/chapter?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "next_page_url": null,
+        "path": "http://127.0.0.1:8000/api/v1/note/category/chapter",
+        "per_page": 100,
+        "prev_page_url": null,
+        "to": 1,
+        "total": 1
+    }
 }
 ```
