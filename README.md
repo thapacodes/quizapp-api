@@ -9,14 +9,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/blog", requestOptions)
+fetch("https://revisechemistry.org/api/v1/blog", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/blog'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/blog'));
 
 
 http.StreamedResponse response = await request.send();
@@ -169,10 +169,10 @@ else {
         }
     ],
     "links": {
-        "first": "http://127.0.0.1:8000/api/v1/blog?page=1",
-        "last": "http://127.0.0.1:8000/api/v1/blog?page=14",
+        "first": "https://revisechemistry.org/api/v1/blog?page=1",
+        "last": "https://revisechemistry.org/api/v1/blog?page=14",
         "prev": null,
-        "next": "http://127.0.0.1:8000/api/v1/blog?page=2"
+        "next": "https://revisechemistry.org/api/v1/blog?page=2"
     },
     "meta": {
         "current_page": 1,
@@ -185,52 +185,52 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=1",
+                "url": "https://revisechemistry.org/api/v1/blog?page=1",
                 "label": "1",
                 "active": true
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=2",
+                "url": "https://revisechemistry.org/api/v1/blog?page=2",
                 "label": "2",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=3",
+                "url": "https://revisechemistry.org/api/v1/blog?page=3",
                 "label": "3",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=4",
+                "url": "https://revisechemistry.org/api/v1/blog?page=4",
                 "label": "4",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=5",
+                "url": "https://revisechemistry.org/api/v1/blog?page=5",
                 "label": "5",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=6",
+                "url": "https://revisechemistry.org/api/v1/blog?page=6",
                 "label": "6",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=7",
+                "url": "https://revisechemistry.org/api/v1/blog?page=7",
                 "label": "7",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=8",
+                "url": "https://revisechemistry.org/api/v1/blog?page=8",
                 "label": "8",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=9",
+                "url": "https://revisechemistry.org/api/v1/blog?page=9",
                 "label": "9",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=10",
+                "url": "https://revisechemistry.org/api/v1/blog?page=10",
                 "label": "10",
                 "active": false
             },
@@ -240,22 +240,22 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=13",
+                "url": "https://revisechemistry.org/api/v1/blog?page=13",
                 "label": "13",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=14",
+                "url": "https://revisechemistry.org/api/v1/blog?page=14",
                 "label": "14",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog?page=2",
+                "url": "https://revisechemistry.org/api/v1/blog?page=2",
                 "label": "Next &raquo;",
                 "active": false
             }
         ],
-        "path": "http://127.0.0.1:8000/api/v1/blog",
+        "path": "https://revisechemistry.org/api/v1/blog",
         "per_page": 15,
         "to": 15,
         "total": 200
@@ -270,14 +270,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/blog/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/blog/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/blog/1'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/blog/1'));
 
 
 http.StreamedResponse response = await request.send();
@@ -319,14 +319,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/blog", requestOptions)
+fetch("https://revisechemistry.org/api/v1/blog", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.MultipartRequest('POST', Uri.parse('http://127.0.0.1:8000/api/v1/blog'));
+var request = http.MultipartRequest('POST', Uri.parse('https://revisechemistry.org/api/v1/blog'));
 request.fields.addAll({
   'token': 'ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB',
   'title': 'This is random title',
@@ -372,14 +372,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/blog/8", requestOptions)
+fetch("https://revisechemistry.org/api/v1/blog/8", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.MultipartRequest('POST', Uri.parse('http://127.0.0.1:8000/api/v1/blog/8'));
+var request = http.MultipartRequest('POST', Uri.parse('https://revisechemistry.org/api/v1/blog/8'));
 request.fields.addAll({
   'token': 'ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB',
   'title': 'This is random title2',
@@ -427,7 +427,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/blog/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/blog/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -437,7 +437,7 @@ fetch("http://127.0.0.1:8000/api/v1/blog/1", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('DELETE', Uri.parse('http://127.0.0.1:8000/api/v1/blog/1'));
+var request = http.Request('DELETE', Uri.parse('https://revisechemistry.org/api/v1/blog/1'));
 request.body = json.encode({
   "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB"
 });
@@ -475,7 +475,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/blog/search/title", requestOptions)
+fetch("https://revisechemistry.org/api/v1/blog/search/title", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -485,7 +485,7 @@ fetch("http://127.0.0.1:8000/api/v1/blog/search/title", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/blog/search/title'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/blog/search/title'));
 request.body = json.encode({
   "title": "random title"
 });
@@ -552,7 +552,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/blog/filter/post", requestOptions)
+fetch("https://revisechemistry.org/api/v1/blog/filter/post", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -562,7 +562,7 @@ fetch("http://127.0.0.1:8000/api/v1/blog/filter/post", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/blog/filter/post'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/blog/filter/post'));
 request.body = json.encode({
   "category": "physics",
   "order": "ASC"
@@ -603,10 +603,10 @@ else {
                 "updated_at": "2021-07-16 05:24:52"
             }
         ],
-        "first_page_url": "http://127.0.0.1:8000/api/v1/blog/filter/post?page=1",
+        "first_page_url": "https://revisechemistry.org/api/v1/blog/filter/post?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http://127.0.0.1:8000/api/v1/blog/filter/post?page=1",
+        "last_page_url": "https://revisechemistry.org/api/v1/blog/filter/post?page=1",
         "links": [
             {
                 "url": null,
@@ -614,7 +614,7 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/blog/filter/post?page=1",
+                "url": "https://revisechemistry.org/api/v1/blog/filter/post?page=1",
                 "label": "1",
                 "active": true
             },
@@ -625,7 +625,7 @@ else {
             }
         ],
         "next_page_url": null,
-        "path": "http://127.0.0.1:8000/api/v1/blog/filter/post",
+        "path": "https://revisechemistry.org/api/v1/blog/filter/post",
         "per_page": 15,
         "prev_page_url": null,
         "to": 2,
@@ -647,14 +647,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/meta-data", requestOptions)
+fetch("https://revisechemistry.org/api/v1/meta-data", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/meta-data'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/meta-data'));
 
 
 http.StreamedResponse response = await request.send();
@@ -742,10 +742,10 @@ else {
         }
     ],
     "links": {
-        "first": "http://127.0.0.1:8000/api/v1/meta-data?page=1",
-        "last": "http://127.0.0.1:8000/api/v1/meta-data?page=20",
+        "first": "https://revisechemistry.org/api/v1/meta-data?page=1",
+        "last": "https://revisechemistry.org/api/v1/meta-data?page=20",
         "prev": null,
-        "next": "http://127.0.0.1:8000/api/v1/meta-data?page=2"
+        "next": "https://revisechemistry.org/api/v1/meta-data?page=2"
     },
     "meta": {
         "current_page": 1,
@@ -758,52 +758,52 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=1",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=1",
                 "label": "1",
                 "active": true
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=2",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=2",
                 "label": "2",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=3",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=3",
                 "label": "3",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=4",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=4",
                 "label": "4",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=5",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=5",
                 "label": "5",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=6",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=6",
                 "label": "6",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=7",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=7",
                 "label": "7",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=8",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=8",
                 "label": "8",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=9",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=9",
                 "label": "9",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=10",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=10",
                 "label": "10",
                 "active": false
             },
@@ -813,22 +813,22 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=19",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=19",
                 "label": "19",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=20",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=20",
                 "label": "20",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/meta-data?page=2",
+                "url": "https://revisechemistry.org/api/v1/meta-data?page=2",
                 "label": "Next &raquo;",
                 "active": false
             }
         ],
-        "path": "http://127.0.0.1:8000/api/v1/meta-data",
+        "path": "https://revisechemistry.org/api/v1/meta-data",
         "per_page": 10,
         "to": 10,
         "total": 200
@@ -843,14 +843,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/meta-data/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/meta-data/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/meta-data/1'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/meta-data/1'));
 
 
 http.StreamedResponse response = await request.send();
@@ -891,7 +891,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/meta-data", requestOptions)
+fetch("https://revisechemistry.org/api/v1/meta-data", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -901,7 +901,7 @@ fetch("http://127.0.0.1:8000/api/v1/meta-data", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/meta-data'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/meta-data'));
 request.body = json.encode({
   "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB",
   "about": "email",
@@ -947,7 +947,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/meta-data/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/meta-data/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -957,7 +957,7 @@ fetch("http://127.0.0.1:8000/api/v1/meta-data/1", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('PUT', Uri.parse('http://127.0.0.1:8000/api/v1/meta-data/1'));
+var request = http.Request('PUT', Uri.parse('https://revisechemistry.org/api/v1/meta-data/1'));
 request.body = json.encode({
   "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB",
   "about": "email",
@@ -1002,7 +1002,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/meta-data/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/meta-data/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1012,7 +1012,7 @@ fetch("http://127.0.0.1:8000/api/v1/meta-data/1", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('DELETE', Uri.parse('http://127.0.0.1:8000/api/v1/meta-data/1'));
+var request = http.Request('DELETE', Uri.parse('https://revisechemistry.org/api/v1/meta-data/1'));
 request.body = json.encode({
   "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB"
 });
@@ -1045,14 +1045,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/forum", requestOptions)
+fetch("https://revisechemistry.org/api/v1/forum", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/forum'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/forum'));
 
 
 http.StreamedResponse response = await request.send();
@@ -1160,10 +1160,10 @@ else {
         }
     ],
     "links": {
-        "first": "http://127.0.0.1:8000/api/v1/forum?page=1",
-        "last": "http://127.0.0.1:8000/api/v1/forum?page=20",
+        "first": "https://revisechemistry.org/api/v1/forum?page=1",
+        "last": "https://revisechemistry.org/api/v1/forum?page=20",
         "prev": null,
-        "next": "http://127.0.0.1:8000/api/v1/forum?page=2"
+        "next": "https://revisechemistry.org/api/v1/forum?page=2"
     },
     "meta": {
         "current_page": 1,
@@ -1176,52 +1176,52 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=1",
+                "url": "https://revisechemistry.org/api/v1/forum?page=1",
                 "label": "1",
                 "active": true
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=2",
+                "url": "https://revisechemistry.org/api/v1/forum?page=2",
                 "label": "2",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=3",
+                "url": "https://revisechemistry.org/api/v1/forum?page=3",
                 "label": "3",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=4",
+                "url": "https://revisechemistry.org/api/v1/forum?page=4",
                 "label": "4",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=5",
+                "url": "https://revisechemistry.org/api/v1/forum?page=5",
                 "label": "5",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=6",
+                "url": "https://revisechemistry.org/api/v1/forum?page=6",
                 "label": "6",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=7",
+                "url": "https://revisechemistry.org/api/v1/forum?page=7",
                 "label": "7",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=8",
+                "url": "https://revisechemistry.org/api/v1/forum?page=8",
                 "label": "8",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=9",
+                "url": "https://revisechemistry.org/api/v1/forum?page=9",
                 "label": "9",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=10",
+                "url": "https://revisechemistry.org/api/v1/forum?page=10",
                 "label": "10",
                 "active": false
             },
@@ -1231,22 +1231,22 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=19",
+                "url": "https://revisechemistry.org/api/v1/forum?page=19",
                 "label": "19",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=20",
+                "url": "https://revisechemistry.org/api/v1/forum?page=20",
                 "label": "20",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/forum?page=2",
+                "url": "https://revisechemistry.org/api/v1/forum?page=2",
                 "label": "Next &raquo;",
                 "active": false
             }
         ],
-        "path": "http://127.0.0.1:8000/api/v1/forum",
+        "path": "https://revisechemistry.org/api/v1/forum",
         "per_page": 10,
         "to": 10,
         "total": 200
@@ -1261,14 +1261,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/forum/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/forum/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/forum/1'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/forum/1'));
 
 
 http.StreamedResponse response = await request.send();
@@ -1314,7 +1314,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/forum", requestOptions)
+fetch("https://revisechemistry.org/api/v1/forum", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1324,7 +1324,7 @@ fetch("http://127.0.0.1:8000/api/v1/forum", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/forum'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/forum'));
 request.body = json.encode({
   "token": "zUsifOwM4OVtlzoT8S04tukXrepz6LrZKGfzO2FS6fwYtvdNgsyUhcuKPw5QLakyH3wEAf2NnwTPDM36rdOg5slrtGu8KTODRFfPSycl9vuNGYhP0TVUlcuPj7jRwGCdP9piJSjhazMHnRQ9OVTXw37NsOOorJSQvPt0JV03bXDM9GaDKZeGN7p1ZZWgOEtErUgH8nA7n8AlJaObd8RcC0rtttrBubQlQrn0iRPMyENRxHbzlmd8JoFIMvBPgR8",
   "question": "What is a random question ?",
@@ -1374,7 +1374,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/forum/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/forum/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1384,7 +1384,7 @@ fetch("http://127.0.0.1:8000/api/v1/forum/1", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('PUT', Uri.parse('http://127.0.0.1:8000/api/v1/forum/1'));
+var request = http.Request('PUT', Uri.parse('https://revisechemistry.org/api/v1/forum/1'));
 request.body = json.encode({
   "token": "zUsifOwM4OVtlzoT8S04tukXrepz6LrZKGfzO2FS6fwYtvdNgsyUhcuKPw5QLakyH3wEAf2NnwTPDM36rdOg5slrtGu8KTODRFfPSycl9vuNGYhP0TVUlcuPj7jRwGCdP9piJSjhazMHnRQ9OVTXw37NsOOorJSQvPt0JV03bXDM9GaDKZeGN7p1ZZWgOEtErUgH8nA7n8AlJaObd8RcC0rtttrBubQlQrn0iRPMyENRxHbzlmd8JoFIMvBPgR8",
   "question": "What is a random question ?",
@@ -1432,7 +1432,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/forum/2", requestOptions)
+fetch("https://revisechemistry.org/api/v1/forum/2", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1442,7 +1442,7 @@ fetch("http://127.0.0.1:8000/api/v1/forum/2", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('DELETE', Uri.parse('http://127.0.0.1:8000/api/v1/forum/2'));
+var request = http.Request('DELETE', Uri.parse('https://revisechemistry.org/api/v1/forum/2'));
 request.body = json.encode({
   "token": "zUsifOwM4OVtlzoT8S04tukXrepz6LrZKGfzO2FS6fwYtvdNgsyUhcuKPw5QLakyH3wEAf2NnwTPDM36rdOg5slrtGu8KTODRFfPSycl9vuNGYhP0TVUlcuPj7jRwGCdP9piJSjhazMHnRQ9OVTXw37NsOOorJSQvPt0JV03bXDM9GaDKZeGN7p1ZZWgOEtErUgH8nA7n8AlJaObd8RcC0rtttrBubQlQrn0iRPMyENRxHbzlmd8JoFIMvBPgR8"
 });
@@ -1481,7 +1481,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/forum/search/question", requestOptions)
+fetch("https://revisechemistry.org/api/v1/forum/search/question", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1491,7 +1491,7 @@ fetch("http://127.0.0.1:8000/api/v1/forum/search/question", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/forum/search/question'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/forum/search/question'));
 request.body = json.encode({
   "question": "Quam voluptatem et qui harum"
 });
@@ -1534,14 +1534,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/student'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/student'));
 
 
 http.StreamedResponse response = await request.send();
@@ -1659,10 +1659,10 @@ else {
         }
     ],
     "links": {
-        "first": "http://127.0.0.1:8000/api/v1/student?page=1",
-        "last": "http://127.0.0.1:8000/api/v1/student?page=20",
+        "first": "https://revisechemistry.org/api/v1/student?page=1",
+        "last": "https://revisechemistry.org/api/v1/student?page=20",
         "prev": null,
-        "next": "http://127.0.0.1:8000/api/v1/student?page=2"
+        "next": "https://revisechemistry.org/api/v1/student?page=2"
     },
     "meta": {
         "current_page": 1,
@@ -1675,52 +1675,52 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=1",
+                "url": "https://revisechemistry.org/api/v1/student?page=1",
                 "label": "1",
                 "active": true
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=2",
+                "url": "https://revisechemistry.org/api/v1/student?page=2",
                 "label": "2",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=3",
+                "url": "https://revisechemistry.org/api/v1/student?page=3",
                 "label": "3",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=4",
+                "url": "https://revisechemistry.org/api/v1/student?page=4",
                 "label": "4",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=5",
+                "url": "https://revisechemistry.org/api/v1/student?page=5",
                 "label": "5",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=6",
+                "url": "https://revisechemistry.org/api/v1/student?page=6",
                 "label": "6",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=7",
+                "url": "https://revisechemistry.org/api/v1/student?page=7",
                 "label": "7",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=8",
+                "url": "https://revisechemistry.org/api/v1/student?page=8",
                 "label": "8",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=9",
+                "url": "https://revisechemistry.org/api/v1/student?page=9",
                 "label": "9",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=10",
+                "url": "https://revisechemistry.org/api/v1/student?page=10",
                 "label": "10",
                 "active": false
             },
@@ -1730,22 +1730,22 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=19",
+                "url": "https://revisechemistry.org/api/v1/student?page=19",
                 "label": "19",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=20",
+                "url": "https://revisechemistry.org/api/v1/student?page=20",
                 "label": "20",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student?page=2",
+                "url": "https://revisechemistry.org/api/v1/student?page=2",
                 "label": "Next &raquo;",
                 "active": false
             }
         ],
-        "path": "http://127.0.0.1:8000/api/v1/student",
+        "path": "https://revisechemistry.org/api/v1/student",
         "per_page": 10,
         "to": 10,
         "total": 200
@@ -1760,14 +1760,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/student/1'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/student/1'));
 
 
 http.StreamedResponse response = await request.send();
@@ -1815,7 +1815,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1825,7 +1825,7 @@ fetch("http://127.0.0.1:8000/api/v1/student", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/student'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/student'));
 request.body = json.encode({
   "first_name": "Rahul",
   "last_name": "Thapa",
@@ -1879,7 +1879,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1889,7 +1889,7 @@ fetch("http://127.0.0.1:8000/api/v1/student", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('PUT', Uri.parse('http://127.0.0.1:8000/api/v1/student'));
+var request = http.Request('PUT', Uri.parse('https://revisechemistry.org/api/v1/student'));
 request.body = json.encode({
   "token": "j6kqLmPMGg6uAKSLKpD7B7guW5DfCJWWRTttbWweHMoCGRKGDr1vop9FIkICdgAAfSfHDcpz5yH6JA2j8zexv3ohkigdmjNWGxAPeVa1xsp3Ri60Jm2FB0y3FQEdyU0BTsSDFuKuKoi60qspplvUOXeGxZ9Uxa9PcgakRk26X5fsRvDdaJIoHDtOiu59ZKe8jj6074CCFDhrifrqxWXdhXqQoTT9sVoJk5XWDjr9IS3nKInXpCKnotGiTzlqoed",
   "first_name": "Rohit",
@@ -1940,7 +1940,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student/new-password", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student/new-password", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1950,7 +1950,7 @@ fetch("http://127.0.0.1:8000/api/v1/student/new-password", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('PUT', Uri.parse('http://127.0.0.1:8000/api/v1/student/new-password'));
+var request = http.Request('PUT', Uri.parse('https://revisechemistry.org/api/v1/student/new-password'));
 request.body = json.encode({
   "token": "j6kqLmPMGg6uAKSLKpD7B7guW5DfCJWWRTttbWweHMoCGRKGDr1vop9FIkICdgAAfSfHDcpz5yH6JA2j8zexv3ohkigdmjNWGxAPeVa1xsp3Ri60Jm2FB0y3FQEdyU0BTsSDFuKuKoi60qspplvUOXeGxZ9Uxa9PcgakRk26X5fsRvDdaJIoHDtOiu59ZKe8jj6074CCFDhrifrqxWXdhXqQoTT9sVoJk5XWDjr9IS3nKInXpCKnotGiTzlqoed",
   "new_password": "456",
@@ -2000,7 +2000,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -2010,7 +2010,7 @@ fetch("http://127.0.0.1:8000/api/v1/student", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('DELETE', Uri.parse('http://127.0.0.1:8000/api/v1/student'));
+var request = http.Request('DELETE', Uri.parse('https://revisechemistry.org/api/v1/student'));
 request.body = json.encode({
   "token": "xYAAczA0jq3Up6JvgSz9AysPFsqycdehp2ntgyxR9affdL93yfjGJb3Bi5HSmZItltVzQlUkNJc8nah3PHGUDZwl66ltvCWp3mQzbUXvf85lQ0ZIotCBXlnbYNBRIrNAGgbqhSlvatZWok0yyhGl289rDMxgfdr3RdbNptM2uTb8GHo2TgNC2icPXirRnYqG92OeeuogSY3BtbGJVjOYAYXC7NnpL65wVyIH53wWpnkiNC47UxzinpbEgc6mbDP"
 });
@@ -2049,7 +2049,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student/login", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student/login", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -2059,7 +2059,7 @@ fetch("http://127.0.0.1:8000/api/v1/student/login", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/student/login'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/student/login'));
 request.body = json.encode({
   "email": "roshan34@gmail.com",
   "password": "1234"
@@ -2106,7 +2106,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student/logout", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student/logout", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -2116,7 +2116,7 @@ fetch("http://127.0.0.1:8000/api/v1/student/logout", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/student/logout'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/student/logout'));
 request.body = json.encode({
   "token": "j6kqLmPMGg6uAKSLKpD7B7guW5DfCJWWRTttbWweHMoCGRKGDr1vop9FIkICdgAAfSfHDcpz5yH6JA2j8zexv3ohkigdmjNWGxAPeVa1xsp3Ri60Jm2FB0y3FQEdyU0BTsSDFuKuKoi60qspplvUOXeGxZ9Uxa9PcgakRk26X5fsRvDdaJIoHDtOiu59ZKe8jj6074CCFDhrifrqxWXdhXqQoTT9sVoJk5XWDjr9IS3nKInXpCKnotGiTzlqoed"
 });
@@ -2156,7 +2156,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student/forgot-password", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student/forgot-password", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -2166,7 +2166,7 @@ fetch("http://127.0.0.1:8000/api/v1/student/forgot-password", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/student/forgot-password'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/student/forgot-password'));
 request.body = json.encode({
   "token": "xYAAczA0jq3Up6JvgSz9AysPFsqycdehp2ntgyxR9affdL93yfjGJb3Bi5HSmZItltVzQlUkNJc8nah3PHGUDZwl66ltvCWp3mQzbUXvf85lQ0ZIotCBXlnbYNBRIrNAGgbqhSlvatZWok0yyhGl289rDMxgfdr3RdbNptM2uTb8GHo2TgNC2icPXirRnYqG92OeeuogSY3BtbGJVjOYAYXC7NnpL65wVyIH53wWpnkiNC47UxzinpbEgc6mbDP",
   "email": "rahul34@gmail.com"
@@ -2207,14 +2207,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/admin/update", requestOptions)
+fetch("https://revisechemistry.org/api/v1/admin/update", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.MultipartRequest('POST', Uri.parse('http://127.0.0.1:8000/api/v1/admin/update'));
+var request = http.MultipartRequest('POST', Uri.parse('https://revisechemistry.org/api/v1/admin/update'));
 request.fields.addAll({
   'token': 'ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB',
   'first_name': 'Quiz',
@@ -2240,7 +2240,7 @@ else {
         "first_name": "Quiz",
         "last_name": "App",
         "email": "admin@gmail.com",
-        "avatar": "http://127.0.0.1:8000/resources/images/avatar/admin_profile-1-1626417207.jpeg",
+        "avatar": "https://revisechemistry.org/resources/images/avatar/admin_profile-1-1626417207.jpeg",
         "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB"
     },
     "message": "Admin record updated successfully"
@@ -2264,7 +2264,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/admin/login", requestOptions)
+fetch("https://revisechemistry.org/api/v1/admin/login", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -2274,7 +2274,7 @@ fetch("http://127.0.0.1:8000/api/v1/admin/login", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/admin/login'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/admin/login'));
 request.body = json.encode({
   "email": "admin@gmail.com",
   "password": "quizapp"
@@ -2320,7 +2320,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/admin/logout", requestOptions)
+fetch("https://revisechemistry.org/api/v1/admin/logout", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -2330,7 +2330,7 @@ fetch("http://127.0.0.1:8000/api/v1/admin/logout", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/admin/logout'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/admin/logout'));
 request.body = json.encode({
   "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB"
 });
@@ -2370,7 +2370,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/admin/forgot-password", requestOptions)
+fetch("https://revisechemistry.org/api/v1/admin/forgot-password", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -2380,7 +2380,7 @@ fetch("http://127.0.0.1:8000/api/v1/admin/forgot-password", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/admin/forgot-password'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/admin/forgot-password'));
 request.body = json.encode({
   "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB",
   "email": "admin@gmail.com"
@@ -2414,14 +2414,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student-report", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student-report", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/student-report'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/student-report'));
 
 
 http.StreamedResponse response = await request.send();
@@ -2889,10 +2889,10 @@ else {
         }
     ],
     "links": {
-        "first": "http://127.0.0.1:8000/api/v1/student-report?page=1",
-        "last": "http://127.0.0.1:8000/api/v1/student-report?page=4",
+        "first": "https://revisechemistry.org/api/v1/student-report?page=1",
+        "last": "https://revisechemistry.org/api/v1/student-report?page=4",
         "prev": null,
-        "next": "http://127.0.0.1:8000/api/v1/student-report?page=2"
+        "next": "https://revisechemistry.org/api/v1/student-report?page=2"
     },
     "meta": {
         "current_page": 1,
@@ -2905,32 +2905,32 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student-report?page=1",
+                "url": "https://revisechemistry.org/api/v1/student-report?page=1",
                 "label": "1",
                 "active": true
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student-report?page=2",
+                "url": "https://revisechemistry.org/api/v1/student-report?page=2",
                 "label": "2",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student-report?page=3",
+                "url": "https://revisechemistry.org/api/v1/student-report?page=3",
                 "label": "3",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student-report?page=4",
+                "url": "https://revisechemistry.org/api/v1/student-report?page=4",
                 "label": "4",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student-report?page=2",
+                "url": "https://revisechemistry.org/api/v1/student-report?page=2",
                 "label": "Next &raquo;",
                 "active": false
             }
         ],
-        "path": "http://127.0.0.1:8000/api/v1/student-report",
+        "path": "https://revisechemistry.org/api/v1/student-report",
         "per_page": 50,
         "to": 50,
         "total": 200
@@ -2954,7 +2954,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student-report/student", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student-report/student", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -2964,7 +2964,7 @@ fetch("http://127.0.0.1:8000/api/v1/student-report/student", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/student-report/student'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/student-report/student'));
 request.body = json.encode({
   "token": "QRHl07Z2PaIs2tum7LhvkDk2I7Qx615kCSsDJjKAKllhVfQlZvt6k1RpPhutuqlAdp4dGGelUtuORbvlbey7idWxu7gP7XiKBNq7yElE2ob5DynD0FsolqAyx9l4l7bLZzJd03pPw8lNz587x73osbwqSiYxibMOenyfaenHn5aOXu1eg2DekfLIlmkNmprcYFU59HHoeUGfHPhWkuvg4RYazPrdex0Vv3lxppKu6tyHiAwVtlb1MgYLYRBB2BJ"
 });
@@ -3013,10 +3013,10 @@ else {
                 "updated_at": "2021-07-15T02:26:04.000000Z"
             }
         ],
-        "first_page_url": "http://127.0.0.1:8000/api/v1/student-report/student?page=1",
+        "first_page_url": "https://revisechemistry.org/api/v1/student-report/student?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http://127.0.0.1:8000/api/v1/student-report/student?page=1",
+        "last_page_url": "https://revisechemistry.org/api/v1/student-report/student?page=1",
         "links": [
             {
                 "url": null,
@@ -3024,7 +3024,7 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/student-report/student?page=1",
+                "url": "https://revisechemistry.org/api/v1/student-report/student?page=1",
                 "label": "1",
                 "active": true
             },
@@ -3035,7 +3035,7 @@ else {
             }
         ],
         "next_page_url": null,
-        "path": "http://127.0.0.1:8000/api/v1/student-report/student",
+        "path": "https://revisechemistry.org/api/v1/student-report/student",
         "per_page": 50,
         "prev_page_url": null,
         "to": 3,
@@ -3051,14 +3051,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student-report/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student-report/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/student-report/1'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/student-report/1'));
 
 
 http.StreamedResponse response = await request.send();
@@ -3121,7 +3121,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student-report/", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student-report/", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -3131,7 +3131,7 @@ fetch("http://127.0.0.1:8000/api/v1/student-report/", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/student-report/'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/student-report/'));
 request.body = json.encode({
   "token": "QRHl07Z2PaIs2tum7LhvkDk2I7Qx615kCSsDJjKAKllhVfQlZvt6k1RpPhutuqlAdp4dGGelUtuORbvlbey7idWxu7gP7XiKBNq7yElE2ob5DynD0FsolqAyx9l4l7bLZzJd03pPw8lNz587x73osbwqSiYxibMOenyfaenHn5aOXu1eg2DekfLIlmkNmprcYFU59HHoeUGfHPhWkuvg4RYazPrdex0Vv3lxppKu6tyHiAwVtlb1MgYLYRBB2BJ",
   "question_answer": [
@@ -3212,7 +3212,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/student-report/2", requestOptions)
+fetch("https://revisechemistry.org/api/v1/student-report/2", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -3222,7 +3222,7 @@ fetch("http://127.0.0.1:8000/api/v1/student-report/2", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('DELETE', Uri.parse('http://127.0.0.1:8000/api/v1/student-report/2'));
+var request = http.Request('DELETE', Uri.parse('https://revisechemistry.org/api/v1/student-report/2'));
 request.body = json.encode({
   "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB"
 });
@@ -3254,14 +3254,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/quiz", requestOptions)
+fetch("https://revisechemistry.org/api/v1/quiz", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/quiz'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/quiz'));
 
 
 http.StreamedResponse response = await request.send();
@@ -3779,10 +3779,10 @@ else {
         }
     ],
     "links": {
-        "first": "http://127.0.0.1:8000/api/v1/quiz?page=1",
-        "last": "http://127.0.0.1:8000/api/v1/quiz?page=4",
+        "first": "https://revisechemistry.org/api/v1/quiz?page=1",
+        "last": "https://revisechemistry.org/api/v1/quiz?page=4",
         "prev": null,
-        "next": "http://127.0.0.1:8000/api/v1/quiz?page=2"
+        "next": "https://revisechemistry.org/api/v1/quiz?page=2"
     },
     "meta": {
         "current_page": 1,
@@ -3795,32 +3795,32 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/quiz?page=1",
+                "url": "https://revisechemistry.org/api/v1/quiz?page=1",
                 "label": "1",
                 "active": true
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/quiz?page=2",
+                "url": "https://revisechemistry.org/api/v1/quiz?page=2",
                 "label": "2",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/quiz?page=3",
+                "url": "https://revisechemistry.org/api/v1/quiz?page=3",
                 "label": "3",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/quiz?page=4",
+                "url": "https://revisechemistry.org/api/v1/quiz?page=4",
                 "label": "4",
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/quiz?page=2",
+                "url": "https://revisechemistry.org/api/v1/quiz?page=2",
                 "label": "Next &raquo;",
                 "active": false
             }
         ],
-        "path": "http://127.0.0.1:8000/api/v1/quiz",
+        "path": "https://revisechemistry.org/api/v1/quiz",
         "per_page": 50,
         "to": 50,
         "total": 200
@@ -3843,7 +3843,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/quiz/category/chapter", requestOptions)
+fetch("https://revisechemistry.org/api/v1/quiz/category/chapter", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -3853,7 +3853,7 @@ fetch("http://127.0.0.1:8000/api/v1/quiz/category/chapter", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/quiz/category/chapter'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/quiz/category/chapter'));
 request.body = json.encode({
   "chapter": "et"
 });
@@ -4051,10 +4051,10 @@ else {
                 "updated_at": "2021-07-27T03:17:43.000000Z"
             }
         ],
-        "first_page_url": "http://127.0.0.1:8000/api/v1/quiz/category/chapter?page=1",
+        "first_page_url": "https://revisechemistry.org/api/v1/quiz/category/chapter?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http://127.0.0.1:8000/api/v1/quiz/category/chapter?page=1",
+        "last_page_url": "https://revisechemistry.org/api/v1/quiz/category/chapter?page=1",
         "links": [
             {
                 "url": null,
@@ -4062,7 +4062,7 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/quiz/category/chapter?page=1",
+                "url": "https://revisechemistry.org/api/v1/quiz/category/chapter?page=1",
                 "label": "1",
                 "active": true
             },
@@ -4073,7 +4073,7 @@ else {
             }
         ],
         "next_page_url": null,
-        "path": "http://127.0.0.1:8000/api/v1/quiz/category/chapter",
+        "path": "https://revisechemistry.org/api/v1/quiz/category/chapter",
         "per_page": 100,
         "prev_page_url": null,
         "to": 16,
@@ -4099,7 +4099,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/quiz/category", requestOptions)
+fetch("https://revisechemistry.org/api/v1/quiz/category", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -4109,7 +4109,7 @@ fetch("http://127.0.0.1:8000/api/v1/quiz/category", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/quiz/category'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/quiz/category'));
 request.body = json.encode({
   "category": "animi"
 });
@@ -4151,10 +4151,10 @@ else {
                 "updated_at": "2021-07-15T02:26:04.000000Z"
             }
         ],
-        "first_page_url": "http://127.0.0.1:8000/api/v1/quiz/category?page=1",
+        "first_page_url": "https://revisechemistry.org/api/v1/quiz/category?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http://127.0.0.1:8000/api/v1/quiz/category?page=1",
+        "last_page_url": "https://revisechemistry.org/api/v1/quiz/category?page=1",
         "links": [
             {
                 "url": null,
@@ -4162,7 +4162,7 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/quiz/category?page=1",
+                "url": "https://revisechemistry.org/api/v1/quiz/category?page=1",
                 "label": "1",
                 "active": true
             },
@@ -4173,7 +4173,7 @@ else {
             }
         ],
         "next_page_url": null,
-        "path": "http://127.0.0.1:8000/api/v1/quiz/category",
+        "path": "https://revisechemistry.org/api/v1/quiz/category",
         "per_page": 100,
         "prev_page_url": null,
         "to": 2,
@@ -4189,14 +4189,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/quiz/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/quiz/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/quiz/1'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/quiz/1'));
 
 
 http.StreamedResponse response = await request.send();
@@ -4250,7 +4250,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/quiz", requestOptions)
+fetch("https://revisechemistry.org/api/v1/quiz", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -4260,7 +4260,7 @@ fetch("http://127.0.0.1:8000/api/v1/quiz", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/quiz'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/quiz'));
 request.body = json.encode({
   "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB",
   "question": "You can change other options as well",
@@ -4330,7 +4330,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/quiz/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/quiz/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -4340,7 +4340,7 @@ fetch("http://127.0.0.1:8000/api/v1/quiz/1", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('PUT', Uri.parse('http://127.0.0.1:8000/api/v1/quiz/1'));
+var request = http.Request('PUT', Uri.parse('https://revisechemistry.org/api/v1/quiz/1'));
 request.body = json.encode({
   "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB",
   "question": "You can change other options as well",
@@ -4401,7 +4401,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/quiz/3", requestOptions)
+fetch("https://revisechemistry.org/api/v1/quiz/3", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -4411,7 +4411,7 @@ fetch("http://127.0.0.1:8000/api/v1/quiz/3", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('DELETE', Uri.parse('http://127.0.0.1:8000/api/v1/quiz/3'));
+var request = http.Request('DELETE', Uri.parse('https://revisechemistry.org/api/v1/quiz/3'));
 request.body = json.encode({
   "token": "ZDaiO8yP0QxcWyjxUuNgREqtijGlqcpTEA1FP4pF8zoYZlgCMQ7siygFFb5BMWRMziDXdhnzYB6rgDJ1QKVYnxFlU1UUKQixwXXUURRedVzMeQ522vBmJZn1wJhPA5xpfcuyilK0y2Yud6CzyxwmjTSllwLSJcQ4vtLh2pDLbTQ3Y1TyWqGCL99iHsKSTf0gy6ry4uGWuBz6cY9GbIUHTLfiS37A6uMtFIYyxuE3ioSkTwrVlGMHlLtFl2ybYcB"
 });
@@ -4443,14 +4443,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/note", requestOptions)
+fetch("https://revisechemistry.org/api/v1/note", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/note'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/note'));
 
 
 http.StreamedResponse response = await request.send();
@@ -4476,8 +4476,8 @@ else {
         }
     ],
     "links": {
-        "first": "http://127.0.0.1:8000/api/v1/note?page=1",
-        "last": "http://127.0.0.1:8000/api/v1/note?page=1",
+        "first": "https://revisechemistry.org/api/v1/note?page=1",
+        "last": "https://revisechemistry.org/api/v1/note?page=1",
         "prev": null,
         "next": null
     },
@@ -4492,7 +4492,7 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/note?page=1",
+                "url": "https://revisechemistry.org/api/v1/note?page=1",
                 "label": "1",
                 "active": true
             },
@@ -4502,7 +4502,7 @@ else {
                 "active": false
             }
         ],
-        "path": "http://127.0.0.1:8000/api/v1/note",
+        "path": "https://revisechemistry.org/api/v1/note",
         "per_page": 50,
         "to": 1,
         "total": 1
@@ -4517,14 +4517,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/note/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/note/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
 
 ```dart
-var request = http.Request('GET', Uri.parse('http://127.0.0.1:8000/api/v1/note/1'));
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/note/1'));
 
 
 http.StreamedResponse response = await request.send();
@@ -4569,7 +4569,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/note", requestOptions)
+fetch("https://revisechemistry.org/api/v1/note", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -4579,7 +4579,7 @@ fetch("http://127.0.0.1:8000/api/v1/note", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/note'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/note'));
 request.body = json.encode({
   "token": "uNTaIBJEqPTyVthi0sUelUUISdz74V4px3It7KCnWjSPwZZaVD4CbcGcevLKzdUvi12JeMgV7MXRlbZGgF2laGsB7iXAFLTDbUTolYyIAgWlNPzLgc9UdDNw6RPQJrZmvp0hrK5adhPZ2CoDvhh3KfXrmGyhnCWes4njuHTi4bsXGiYYOoioC28bljSQzEhK4gO9lgFOPZHLXwoyZxiaW72WyLL9VFrV2FFhZHdIoyYApgC8ri29nu0DsqdYfnZ",
   "chapter": "force",
@@ -4628,7 +4628,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/note/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/note/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -4638,7 +4638,7 @@ fetch("http://127.0.0.1:8000/api/v1/note/1", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('PUT', Uri.parse('http://127.0.0.1:8000/api/v1/note/1'));
+var request = http.Request('PUT', Uri.parse('https://revisechemistry.org/api/v1/note/1'));
 request.body = json.encode({
   "token": "uNTaIBJEqPTyVthi0sUelUUISdz74V4px3It7KCnWjSPwZZaVD4CbcGcevLKzdUvi12JeMgV7MXRlbZGgF2laGsB7iXAFLTDbUTolYyIAgWlNPzLgc9UdDNw6RPQJrZmvp0hrK5adhPZ2CoDvhh3KfXrmGyhnCWes4njuHTi4bsXGiYYOoioC28bljSQzEhK4gO9lgFOPZHLXwoyZxiaW72WyLL9VFrV2FFhZHdIoyYApgC8ri29nu0DsqdYfnZ",
   "chapter": "force",
@@ -4685,7 +4685,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/note/1", requestOptions)
+fetch("https://revisechemistry.org/api/v1/note/1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -4695,7 +4695,7 @@ fetch("http://127.0.0.1:8000/api/v1/note/1", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('DELETE', Uri.parse('http://127.0.0.1:8000/api/v1/note/1'));
+var request = http.Request('DELETE', Uri.parse('https://revisechemistry.org/api/v1/note/1'));
 request.body = json.encode({
   "token": "uNTaIBJEqPTyVthi0sUelUUISdz74V4px3It7KCnWjSPwZZaVD4CbcGcevLKzdUvi12JeMgV7MXRlbZGgF2laGsB7iXAFLTDbUTolYyIAgWlNPzLgc9UdDNw6RPQJrZmvp0hrK5adhPZ2CoDvhh3KfXrmGyhnCWes4njuHTi4bsXGiYYOoioC28bljSQzEhK4gO9lgFOPZHLXwoyZxiaW72WyLL9VFrV2FFhZHdIoyYApgC8ri29nu0DsqdYfnZ"
 });
@@ -4733,7 +4733,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/note/category", requestOptions)
+fetch("https://revisechemistry.org/api/v1/note/category", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -4743,7 +4743,7 @@ fetch("http://127.0.0.1:8000/api/v1/note/category", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/note/category'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/note/category'));
 request.body = json.encode({
   "category": "physic"
 });
@@ -4773,10 +4773,10 @@ else {
                 "updated_at": "2021-07-27T03:24:27.000000Z"
             }
         ],
-        "first_page_url": "http://127.0.0.1:8000/api/v1/note/category?page=1",
+        "first_page_url": "https://revisechemistry.org/api/v1/note/category?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http://127.0.0.1:8000/api/v1/note/category?page=1",
+        "last_page_url": "https://revisechemistry.org/api/v1/note/category?page=1",
         "links": [
             {
                 "url": null,
@@ -4784,7 +4784,7 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/note/category?page=1",
+                "url": "https://revisechemistry.org/api/v1/note/category?page=1",
                 "label": "1",
                 "active": true
             },
@@ -4795,7 +4795,7 @@ else {
             }
         ],
         "next_page_url": null,
-        "path": "http://127.0.0.1:8000/api/v1/note/category",
+        "path": "https://revisechemistry.org/api/v1/note/category",
         "per_page": 100,
         "prev_page_url": null,
         "to": 1,
@@ -4820,7 +4820,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/v1/note/category/chapter", requestOptions)
+fetch("https://revisechemistry.org/api/v1/note/category/chapter", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -4830,7 +4830,7 @@ fetch("http://127.0.0.1:8000/api/v1/note/category/chapter", requestOptions)
 var headers = {
   'Content-Type': 'application/json'
 };
-var request = http.Request('POST', Uri.parse('http://127.0.0.1:8000/api/v1/note/category/chapter'));
+var request = http.Request('POST', Uri.parse('https://revisechemistry.org/api/v1/note/category/chapter'));
 request.body = json.encode({
   "chapter": "force"
 });
@@ -4860,10 +4860,10 @@ else {
                 "updated_at": "2021-07-27T03:24:27.000000Z"
             }
         ],
-        "first_page_url": "http://127.0.0.1:8000/api/v1/note/category/chapter?page=1",
+        "first_page_url": "https://revisechemistry.org/api/v1/note/category/chapter?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http://127.0.0.1:8000/api/v1/note/category/chapter?page=1",
+        "last_page_url": "https://revisechemistry.org/api/v1/note/category/chapter?page=1",
         "links": [
             {
                 "url": null,
@@ -4871,7 +4871,7 @@ else {
                 "active": false
             },
             {
-                "url": "http://127.0.0.1:8000/api/v1/note/category/chapter?page=1",
+                "url": "https://revisechemistry.org/api/v1/note/category/chapter?page=1",
                 "label": "1",
                 "active": true
             },
@@ -4882,7 +4882,7 @@ else {
             }
         ],
         "next_page_url": null,
-        "path": "http://127.0.0.1:8000/api/v1/note/category/chapter",
+        "path": "https://revisechemistry.org/api/v1/note/category/chapter",
         "per_page": 100,
         "prev_page_url": null,
         "to": 1,
