@@ -4890,3 +4890,313 @@ else {
     }
 }
 ```
+
+## Video API Routes
+
+### Get All Video Posted
+```js
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://revisechemistry.org/api/v1/video", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```dart
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/video'));
+
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}
+```
+
+```json
+{
+    "data": [
+        {
+            "id": 1,
+            "chapter": "Quis ad vel magnam aut magni explicabo qui.",
+            "category": "O Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-3.mp4",
+            "subChapter": "Porro expedita id adipisci quasi incidunt quia.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 2,
+            "chapter": "Laudantium eius aut fugit et ullam aut.",
+            "category": "IBDP SL-HL",
+            "videoUrl": "http://localhost:3000/resources/videos/video-4.mp4",
+            "subChapter": "Rem odit eligendi iusto facilis aut consequatur.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 3,
+            "chapter": "Eum laborum magni possimus in expedita ut.",
+            "category": "A Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-5.mp4",
+            "subChapter": "In ut qui exercitationem qui maxime quo veritatis dicta.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 4,
+            "chapter": "Sit molestias eius praesentium voluptas aperiam et hic.",
+            "category": "MYPIB",
+            "videoUrl": "http://localhost:3000/resources/videos/video-5.mp4",
+            "subChapter": "Ducimus ipsam recusandae quibusdam incidunt sapiente.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 5,
+            "chapter": "Iste exercitationem vitae ipsa sint.",
+            "category": "IBDP SL-HL",
+            "videoUrl": "http://localhost:3000/resources/videos/video-6.mp4",
+            "subChapter": "Sint molestias et est tenetur quidem error voluptatem neque.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 6,
+            "chapter": "Nihil magnam accusamus ipsam consequuntur ullam.",
+            "category": "A Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-2.mp4",
+            "subChapter": "Itaque quia nesciunt recusandae cupiditate fugit earum maxime.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 7,
+            "chapter": "Occaecati repellendus sit repellendus quam aut aliquam dignissimos.",
+            "category": "O Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-3.mp4",
+            "subChapter": "Eum quas ratione sit adipisci fugit.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 8,
+            "chapter": "Adipisci debitis exercitationem ut quia et.",
+            "category": "O Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-4.mp4",
+            "subChapter": "Dolore voluptatibus at qui distinctio mollitia earum.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 9,
+            "chapter": "Dolorem occaecati voluptate eligendi.",
+            "category": "A Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-2.mp4",
+            "subChapter": "Qui recusandae illum dolor.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 10,
+            "chapter": "Quos cupiditate suscipit qui pariatur eaque dolorum.",
+            "category": "O Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-1.mp4",
+            "subChapter": "Minima dolorem porro ut non voluptatem consequatur officiis.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 11,
+            "chapter": "Ex facere et velit sit quidem veritatis.",
+            "category": "IBDP SL-HL",
+            "videoUrl": "http://localhost:3000/resources/videos/video-3.mp4",
+            "subChapter": "Rem aut et eos provident facere ducimus voluptas.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 12,
+            "chapter": "Doloribus ratione nulla eos aut delectus laborum aspernatur.",
+            "category": "O Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-5.mp4",
+            "subChapter": "Ex excepturi aperiam eveniet.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 13,
+            "chapter": "Eum voluptas eum et molestiae cum ut.",
+            "category": "IBDP SL-HL",
+            "videoUrl": "http://localhost:3000/resources/videos/video-1.mp4",
+            "subChapter": "Minima sit veritatis repellat consequuntur.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 14,
+            "chapter": "Accusamus voluptatem minima id quo similique optio.",
+            "category": "O Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-4.mp4",
+            "subChapter": "Consectetur occaecati sunt sit aspernatur itaque.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 15,
+            "chapter": "Culpa voluptatem perferendis sapiente asperiores quaerat dolorum.",
+            "category": "IBDP SL-HL",
+            "videoUrl": "http://localhost:3000/resources/videos/video-6.mp4",
+            "subChapter": "Laborum rerum et illo.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 16,
+            "chapter": "Ipsa accusantium consectetur fugit nihil vitae dolorem quod nostrum.",
+            "category": "MYPIB",
+            "videoUrl": "http://localhost:3000/resources/videos/video-5.mp4",
+            "subChapter": "Quis fugiat ut quia qui provident.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 17,
+            "chapter": "Amet ut temporibus quia.",
+            "category": "O Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-2.mp4",
+            "subChapter": "Autem sunt ratione sed perspiciatis repellat aperiam sit consequatur.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 18,
+            "chapter": "Quo eveniet qui accusamus aut.",
+            "category": "A Levels",
+            "videoUrl": "http://localhost:3000/resources/videos/video-3.mp4",
+            "subChapter": "Ab qui id soluta et tempora.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 19,
+            "chapter": "Consequatur velit qui quis.",
+            "category": "IBDP SL-HL",
+            "videoUrl": "http://localhost:3000/resources/videos/video-6.mp4",
+            "subChapter": "Minus nesciunt tempora qui explicabo eum sint.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        },
+        {
+            "id": 20,
+            "chapter": "Doloribus aut amet commodi.",
+            "category": "MYPIB",
+            "videoUrl": "http://localhost:3000/resources/videos/video-6.mp4",
+            "subChapter": "Sint saepe et consectetur nam.",
+            "mediaType": "video/mp4",
+            "created_at": "2021-10-11T02:36:32.000000Z",
+            "updated_at": "2021-10-11T02:36:32.000000Z"
+        }
+    ],
+    "links": {
+        "first": "http://127.0.0.1:8000/api/v1/video?page=1",
+        "last": "http://127.0.0.1:8000/api/v1/video?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://127.0.0.1:8000/api/v1/video?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "path": "http://127.0.0.1:8000/api/v1/video",
+        "per_page": 1000,
+        "to": 20,
+        "total": 20
+    }
+}
+```
+
+### Get Single Video Post
+```js
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://revisechemistry.org/api/v1/video/1", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```dart
+var request = http.Request('GET', Uri.parse('https://revisechemistry.org/api/v1/video/1'));
+
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+}
+else {
+  print(response.reasonPhrase);
+}
+```
+
+```json
+{
+    "data": {
+        "id": 1,
+        "chapter": "Quis ad vel magnam aut magni explicabo qui.",
+        "category": "O Levels",
+        "videoUrl": "http://localhost:3000/resources/videos/video-3.mp4",
+        "subChapter": "Porro expedita id adipisci quasi incidunt quia.",
+        "mediaType": "video/mp4",
+        "created_at": "2021-10-11T02:36:32.000000Z",
+        "updated_at": "2021-10-11T02:36:32.000000Z"
+    }
+}
+```
